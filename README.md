@@ -26,7 +26,7 @@
 | 9 | Практика: владение и заимствование | — |
 | 10 | Коллекции. Слайсы, массивы, строки | — |
 | 11 | Q&A сессия | — |
-| 12 | Структуры и методы. Инкапсуляция | — |
+| 12 | Структуры и методы. Инкапсуляция | [`12-structs-methods-encapsulation/`](12-structs-methods-encapsulation/) |
 | 13 | Перечисления и pattern matching | — |
 | 14 | Практика: структуры, перечисления, pattern matching | — |
 | 15 | Система типов. Result, Option | — |
@@ -56,10 +56,10 @@
 |---|---|---|
 | 30 | Работа с кучей. Box, Arc, Rc. RAII | — |
 | 31 | Потоки. Send + Sync | — |
-| 32 | Лямбды и потоки. move и Arc | — |
-| 33 | Mutex, Atomic | — |
+| 32 | Лямбды и потоки. move и Arc | [`32-closures-threads-arc/`](32-closures-threads-arc/) |
+| 33 | Mutex, Atomic | [`33-mutex-atomic/`](33-mutex-atomic/) |
 | 34 | Практика: потоки, куча, mutex, atomic | — |
-| 35 | Interior mutability. Cell, RefCell | — |
+| 35 | Interior mutability. Cell, RefCell | [`35-interior-mutability/`](35-interior-mutability/) |
 | 36 | Q&A сессия | — |
 | 37 | Сборка. Модули | — |
 | 38 | Продвинутые элементы синтаксиса | — |
@@ -83,8 +83,9 @@ cd <папка-занятия>
 cargo run
 ```
 
-или, если это example внутри crate:
+или, если это example/bin внутри crate:
 
 ```bash
 cargo run --example <имя>
+cargo run --bin <имя>
 ```
