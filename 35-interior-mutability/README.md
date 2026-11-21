@@ -11,5 +11,9 @@
 ## Запуск
 
 ```bash
-cargo run
+cargo run --example cell
+cargo run --example refcell
 ```
+
+- `cell` — демонстрация `Cell`: `get/set/replace/take`
+- `refcell` — демонстрация `RefCell`: `borrow/borrow_mut`, несколько читателей одновременно
