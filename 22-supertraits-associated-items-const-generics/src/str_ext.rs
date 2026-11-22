@@ -44,10 +44,7 @@ mod tests {
     fn display_types_receive_extension_methods() {
         assert_eq!(123_i32.to_square_str(), "[123]");
         assert_eq!(123_u32.to_curly_str(), "{123}");
-        assert_eq!(
-            Ipv4Addr::new(127, 0, 0, 1).to_square_str(),
-            "[127.0.0.1]"
-        );
+        assert_eq!(Ipv4Addr::new(127, 0, 0, 1).to_square_str(), "[127.0.0.1]");
     }
 
     #[test]

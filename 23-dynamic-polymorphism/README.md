@@ -36,7 +36,7 @@ LIVE-архив также содержит вариант с crate `enum_dispat
 ## Запуск
 
 ```bash
-cargo run
+cargo run --example demo
 ```
 
 Запуск тестов:
