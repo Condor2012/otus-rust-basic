@@ -1,3 +1,4 @@
+#[allow(clippy::vec_init_then_push)]
 pub fn create_with_push() -> Vec<i32> {
     let mut values = Vec::new();
     values.push(1);

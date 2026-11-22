@@ -26,9 +26,7 @@ impl<'a> Matcher<'a> {
             } else if text_left.starts_with('(') {
                 let first_close = text_left.find(')')?;
                 let (options, leftover) = text_left.split_at(first_close);
-                tokens.push(MatcherToken::OneOfText(
-                    options[1..].split('|').collect(),
-                ));
+                tokens.push(MatcherToken::OneOfText(options[1..].split('|').collect()));
                 text_left = &leftover[1..];
             } else {
                 let first_wc = text_left.find('.').unwrap_or(text_left.len());

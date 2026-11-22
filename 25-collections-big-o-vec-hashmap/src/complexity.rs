@@ -59,10 +59,7 @@ mod tests {
 
     #[test]
     fn nested_loops_produce_n_squared_pairs() {
-        assert_eq!(
-            all_pairs(&[1, 2]),
-            vec![(1, 1), (1, 2), (2, 1), (2, 2)]
-        );
+        assert_eq!(all_pairs(&[1, 2]), vec![(1, 1), (1, 2), (2, 1), (2, 2)]);
         assert_eq!(all_pairs(&[1, 2, 3]).len(), 9);
     }
 }
