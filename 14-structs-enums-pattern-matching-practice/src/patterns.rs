@@ -63,10 +63,7 @@ pub struct Foo {
 
 impl Foo {
     pub fn new(a: u32, b: &str) -> Self {
-        Self {
-            a,
-            b: b.to_owned(),
-        }
+        Self { a, b: b.to_owned() }
     }
 }
 

@@ -93,7 +93,7 @@ pub fn boxed_parse(input: &str) -> Result<i32, Box<dyn Error>> {
 }
 
 /// Unit-тип можно указать явно, хотя обычно его опускают.
-pub fn print_unit_example() -> () {
+pub fn print_unit_example() {
     println!("Функция возвращает unit-тип ()");
 }
 
