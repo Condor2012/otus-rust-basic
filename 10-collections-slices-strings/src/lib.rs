@@ -4,7 +4,6 @@ pub fn choose_elem(tuple: &mut (i32, i32), pick_second: bool) -> &mut i32 {
     } else {
         &mut tuple.0
     }
-
 }
 
 pub fn get_nth(slice: &mut [i32], n: usize) -> &mut i32 {
@@ -26,11 +25,10 @@ mod tests {
         let second = choose_elem(&mut pair, true);
         *second = 88;
         assert_eq!(pair, (99, 88));
-
     }
 
     #[test]
-    fn test_get_nth_element () {
+    fn test_get_nth_element() {
         let mut array = [1, 2, 3, 4, 5];
 
         let element = get_nth(&mut array[..3], 2);
