@@ -27,7 +27,7 @@
 | 10 | Коллекции. Слайсы, массивы, строки | [`10-collections-slices-strings/`](10-collections-slices-strings/) |
 | 11 | Q&A сессия | — |
 | 12 | Структуры и методы. Инкапсуляция | [`12-structs-methods-encapsulation/`](12-structs-methods-encapsulation/) |
-| 13 | Перечисления и pattern matching | — |
+| 13 | Перечисления и pattern matching | [`13-enums-pattern-matching/`](13-enums-pattern-matching/) |
 | 14 | Практика: структуры, перечисления, pattern matching | — |
 | 15 | Система типов. Result, Option | — |
 | 16 | Лямбда-функции | — |
