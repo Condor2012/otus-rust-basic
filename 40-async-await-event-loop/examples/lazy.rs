@@ -1,5 +1,5 @@
-use std::cell::Cell;
 use async_await_event_loop::expensive_operation;
+use std::cell::Cell;
 
 #[tokio::main]
 async fn main() {
@@ -11,5 +11,8 @@ async fn main() {
     println!("После drop started = {started:?}", started = started.get());
 
     let result = expensive_operation(&started).await;
-    println!("После await: result = {result}, started = {}", started.get());
+    println!(
+        "После await: result = {result}, started = {}",
+        started.get()
+    );
 }

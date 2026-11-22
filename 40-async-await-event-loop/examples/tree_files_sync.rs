@@ -10,7 +10,12 @@ fn main() -> std::io::Result<()> {
     println!("Читаем третий файл...");
     let file3 = fs::read_to_string("file3.txt")?;
 
-    println!("Прочитано: {}, {}, {} байт", file1.len(), file2.len(), file3.len());
+    println!(
+        "Прочитано: {}, {}, {} байт",
+        file1.len(),
+        file2.len(),
+        file3.len()
+    );
     println!("Всё прочитано за {:?}", start.elapsed());
     Ok(())
 }

@@ -12,7 +12,12 @@ async fn main() -> std::io::Result<()> {
     );
 
     let (file1, file2, file3) = (file1?, file2?, file3?);
-    println!("Прочитано: {}, {}, {} байт", file1.len(), file2.len(), file3.len());
+    println!(
+        "Прочитано: {}, {}, {} байт",
+        file1.len(),
+        file2.len(),
+        file3.len()
+    );
     println!("Всё прочитано за {:?}", start.elapsed());
     Ok(())
 }
