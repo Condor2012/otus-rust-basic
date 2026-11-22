@@ -135,7 +135,10 @@ mod tests {
     #[test]
     fn result_validate_password() {
         assert_eq!(validate_password("password1"), Ok(()));
-        assert_eq!(validate_password("short"), Err("Password too short".to_owned()));
+        assert_eq!(
+            validate_password("short"),
+            Err("Password too short".to_owned())
+        );
         assert_eq!(
             validate_password("noligits"),
             Err("Password must contain a digit".to_owned())
@@ -145,8 +148,14 @@ mod tests {
     #[test]
     fn result_sum_returns_first_error() {
         assert_eq!(sum_results(Ok(2), Ok(3)), Ok(5));
-        assert_eq!(sum_results(Ok(2), Err("error".to_owned())), Err("error".to_owned()));
-        assert_eq!(sum_results(Err("fail".to_owned()), Ok(3)), Err("fail".to_owned()));
+        assert_eq!(
+            sum_results(Ok(2), Err("error".to_owned())),
+            Err("error".to_owned())
+        );
+        assert_eq!(
+            sum_results(Err("fail".to_owned()), Ok(3)),
+            Err("fail".to_owned())
+        );
         assert_eq!(
             sum_results(Err("first".to_owned()), Err("second".to_owned())),
             Err("first".to_owned())

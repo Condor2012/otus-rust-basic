@@ -16,9 +16,9 @@ impl<T> Pair<T> {
     }
 }
 
-pub fn add<T>(a: T, b: T) -> T
+pub fn add<T, U>(a: T, b: U) -> T
 where
-    T: Add<Output = T>,
+    T: Add<U, Output = T>,
 {
     a + b
 }
@@ -100,9 +100,9 @@ impl Klone for i32 {
 }
 
 /// Обобщённый поиск, аналогичный сигнатуре `HashMap::get`.
-pub fn get_value<K, V, Q>(map: &HashMap<K, V>, key: &Q) -> Option<&V>
+pub fn get_value<'a, K, V, Q>(map: &'a HashMap<K, V>, key: &Q) -> Option<&'a V>
 where
-    K: Borrow<Q>,
+    K: Borrow<Q> + Hash + Eq,
     Q: Hash + Eq + ?Sized,
 {
     map.get(key)
@@ -114,7 +114,13 @@ mod tests {
 
     #[test]
     fn generic_pair_works_with_different_types() {
-        assert_eq!(Pair::new(1, 2), Pair { first: 1, second: 2 });
+        assert_eq!(
+            Pair::new(1, 2),
+            Pair {
+                first: 1,
+                second: 2
+            }
+        );
         assert_eq!(
             Pair::new("left", "right"),
             Pair {
@@ -127,7 +133,7 @@ mod tests {
     #[test]
     fn add_is_statically_specialized() {
         assert_eq!(add(2_i32, 3), 5);
-        assert_eq!(add("Hello, ".to_owned(), "world".to_owned()), "Hello, world");
+        assert_eq!(add("Hello, ".to_owned(), "world"), "Hello, world");
     }
 
     #[test]
