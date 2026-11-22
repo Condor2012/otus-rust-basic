@@ -28,7 +28,9 @@ mod tests {
 
     #[test]
     fn implementation_selects_associated_types() {
-        let graph = SimpleGraph { connections: vec![(1, 2), (1, 3), (2, 3)] };
+        let graph = SimpleGraph {
+            connections: vec![(1, 2), (1, 3), (2, 3)],
+        };
         assert_eq!(graph.edges(&1), vec![(1, 2), (1, 3)]);
     }
 }

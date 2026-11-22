@@ -17,7 +17,9 @@ mod tests {
 
     #[test]
     fn derive_and_inline_attributes_work() {
-        let user = User { name: "Анна".into() };
+        let user = User {
+            name: "Анна".into(),
+        };
         assert_eq!(user.clone(), user);
         assert_eq!(format!("{user:?}"), "User { name: \"Анна\" }");
         assert_eq!(square(4), 16);

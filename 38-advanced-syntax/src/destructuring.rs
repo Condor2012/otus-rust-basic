@@ -24,6 +24,7 @@ pub fn tuple_edges(values: (i32, i32, i32, i32)) -> (i32, i32) {
 pub fn array_edges(values: &[i32]) -> Option<(i32, i32)> {
     match values {
         [first, .., last] => Some((*first, *last)),
+        [single] => Some((*single, *single)),
         [] => None,
     }
 }
@@ -49,7 +50,10 @@ mod tests {
                 city: "Казань".into(),
             },
         };
-        assert_eq!(person_parts(person), ("Анна".into(), "Ленина".into(), "Казань".into()));
+        assert_eq!(
+            person_parts(person),
+            ("Анна".into(), "Ленина".into(), "Казань".into())
+        );
     }
 
     #[test]
@@ -62,7 +66,10 @@ mod tests {
     #[test]
     fn matches_option_result() {
         assert_eq!(describe_nested(Some(Ok(42))), "Успех: 42");
-        assert_eq!(describe_nested(Some(Err("ошибка".into()))), "Ошибка: ошибка");
+        assert_eq!(
+            describe_nested(Some(Err("ошибка".into()))),
+            "Ошибка: ошибка"
+        );
         assert_eq!(describe_nested(None), "Нет значения");
     }
 }

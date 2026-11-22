@@ -13,7 +13,7 @@ impl Book<'_> {
     }
 }
 
-pub const STATIC_TEXT: &'static str = "статическая строка";
+pub const STATIC_TEXT: &str = "статическая строка";
 
 #[cfg(test)]
 mod tests {
@@ -32,7 +32,10 @@ mod tests {
 
     #[test]
     fn struct_and_static_lifetimes() {
-        let book = Book { title: "Rust", author: "Анна" };
+        let book = Book {
+            title: "Rust",
+            author: "Анна",
+        };
         assert_eq!(book.get_title(), "Rust");
         assert_eq!(STATIC_TEXT, "статическая строка");
     }

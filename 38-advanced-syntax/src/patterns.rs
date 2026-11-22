@@ -27,8 +27,14 @@ mod tests {
     #[test]
     fn matches_every_variant() {
         assert_eq!(describe_message(&Message::Quit), "Выход");
-        assert_eq!(describe_message(&Message::Move { x: 2, y: 3 }), "Перемещение в (2, 3)");
-        assert_eq!(describe_message(&Message::Write("Rust".into())), "Текст: Rust");
+        assert_eq!(
+            describe_message(&Message::Move { x: 2, y: 3 }),
+            "Перемещение в (2, 3)"
+        );
+        assert_eq!(
+            describe_message(&Message::Write("Rust".into())),
+            "Текст: Rust"
+        );
     }
 
     #[test]

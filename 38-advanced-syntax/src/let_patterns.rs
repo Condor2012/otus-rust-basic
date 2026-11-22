@@ -7,7 +7,9 @@ pub fn nested_success(value: Option<Result<i32, String>>) -> Option<i32> {
 }
 
 pub fn greater_than_ten(value: Option<i32>) -> Option<i32> {
-    if let Some(number) = value && number > 10 {
+    if let Some(number) = value
+        && number > 10
+    {
         Some(number)
     } else {
         None
@@ -15,9 +17,9 @@ pub fn greater_than_ten(value: Option<i32>) -> Option<i32> {
 }
 
 pub fn collect_with_while_let(values: Vec<i32>) -> Vec<i32> {
-    let mut iter = values.into_iter();
+    let iter = values.into_iter();
     let mut result = Vec::new();
-    while let Some(value) = iter.next() {
+    for value in iter {
         result.push(value);
     }
     result
