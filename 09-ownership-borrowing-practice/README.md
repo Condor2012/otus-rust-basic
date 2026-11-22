@@ -19,7 +19,7 @@
 ## Запуск
 
 ```bash
-cargo run
+cargo run --example demo
 ```
 
 Запуск модульных и документационных тестов:
