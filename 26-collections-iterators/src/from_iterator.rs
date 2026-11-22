@@ -1,7 +1,10 @@
 use std::collections::{BTreeSet, HashSet};
 
 pub fn filter_letters(string: &str) -> String {
-    string.chars().filter(|character| character.is_alphabetic()).collect()
+    string
+        .chars()
+        .filter(|character| character.is_alphabetic())
+        .collect()
 }
 
 pub fn unique_chars(string: &str) -> HashSet<char> {

@@ -39,11 +39,9 @@ pub fn collect_with_into_iterator(values: Vec<i32>) -> Vec<i32> {
     let mut iterator = IntoIterator::into_iter(values);
     let mut result = Vec::new();
 
-    loop {
-        match iterator.next() {
-            Some(value) => result.push(value),
-            None => break,
-        }
+    #[allow(clippy::while_let_on_iterator)]
+    while let Some(value) = iterator.next() {
+        result.push(value);
     }
 
     result
@@ -73,7 +71,10 @@ mod tests {
     fn standard_slice_iterator_can_replace_custom_one() {
         let value = value();
 
-        assert_eq!(value.iter().map(String::as_str).collect::<Vec<_>>(), vec!["one", "two"]);
+        assert_eq!(
+            value.iter().map(String::as_str).collect::<Vec<_>>(),
+            vec!["one", "two"]
+        );
     }
 
     #[test]
