@@ -1,2 +1,8 @@
 /target
-/*/target
+**/target/
+Cargo.lock
+**/Cargo.lock
+.DS_Store
+file1.txt
+file2.txt
+file3.txt
