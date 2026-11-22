@@ -19,5 +19,5 @@
 ## Запуск
 
 ```bash
-cargo run
+cargo run --example demo
 ```
