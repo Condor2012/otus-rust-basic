@@ -11,7 +11,7 @@
 | Занятие | Тема | Код |
 |---|---|---|
 | 1 | Знакомство с Rust. Подготовка к обучению | [`01-introduction/`](01-introduction/) |
-| 2 | Основы архитектуры компьютера | — |
+| 2 | Основы архитектуры компьютера | [`02-computer-architecture-basics/`](02-computer-architecture-basics/) |
 
 ### Модуль 2. Синтаксис Rust и основы Computer Science
 
