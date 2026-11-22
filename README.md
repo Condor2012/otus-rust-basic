@@ -22,7 +22,7 @@
 | 5 | Ветвление и циклы | [`05-branching-and-loops/`](05-branching-and-loops/) |
 | 6 | Практика: типы данных, переменные, ветвление, циклы | [`06-practice-data-types-control-flow/`](06-practice-data-types-control-flow/) |
 | 7 | Управление ресурсами. Клонирование. Copy. Владение | [`07-resource-management-ownership/`](07-resource-management-ownership/) |
-| 8 | Владение. Ссылки и заимствование | — |
+| 8 | Владение. Ссылки и заимствование | [`08-ownership-references-borrowing/`](08-ownership-references-borrowing/) |
 | 9 | Практика: владение и заимствование | — |
 | 10 | Коллекции. Слайсы, массивы, строки | [`10-collections-slices-strings/`](10-collections-slices-strings/) |
 | 11 | Q&A сессия | — |
