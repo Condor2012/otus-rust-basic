@@ -31,7 +31,7 @@
 | 14 | Практика: структуры, перечисления, pattern matching | [`14-structs-enums-pattern-matching-practice/`](14-structs-enums-pattern-matching-practice/) |
 | 15 | Система типов. Result, Option | [`15-type-system-result-option/`](15-type-system-result-option/) |
 | 16 | Лямбда-функции | [`16-closures-introduction/`](16-closures-introduction/) |
-| 17 | Обработка ошибок. Оператор ? | — |
+| 17 | Обработка ошибок. Оператор ? | [`17-error-handling-question-mark/`](17-error-handling-question-mark/) |
 | 18 | Практика: Result, Option | — |
 
 ### Модуль 3. Типы, полиморфизм и дженерики
