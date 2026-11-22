@@ -45,7 +45,7 @@
 | 23 | Динамический полиморфизм. dyn Trait, dyn Any | [`23-dynamic-polymorphism/`](23-dynamic-polymorphism/) |
 | 24 | Практика: обобщённое программирование | [`24-generics-lifetimes-practice/`](24-generics-lifetimes-practice/) |
 | 25 | Коллекции. Big O. Хэш-мап и вектор | [`25-collections-big-o-vec-hashmap/`](25-collections-big-o-vec-hashmap/) |
-| 26 | Коллекции. Итераторы | — |
+| 26 | Коллекции. Итераторы | [`26-collections-iterators/`](26-collections-iterators/) |
 | 27 | Практика: коллекции и итераторы | — |
 | 28 | Функции. Типы функций. Лямбда-функции | — |
 | 29 | Q&A сессия | — |
