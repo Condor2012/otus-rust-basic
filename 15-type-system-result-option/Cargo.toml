@@ -1,0 +1,6 @@
+[package]
+name = "lesson-15-type-system-result-option"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
