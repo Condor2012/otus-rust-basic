@@ -28,7 +28,7 @@
 | 11 | Q&A сессия | — |
 | 12 | Структуры и методы. Инкапсуляция | [`12-structs-methods-encapsulation/`](12-structs-methods-encapsulation/) |
 | 13 | Перечисления и pattern matching | [`13-enums-pattern-matching/`](13-enums-pattern-matching/) |
-| 14 | Практика: структуры, перечисления, pattern matching | — |
+| 14 | Практика: структуры, перечисления, pattern matching | [`14-structs-enums-pattern-matching-practice/`](14-structs-enums-pattern-matching-practice/) |
 | 15 | Система типов. Result, Option | — |
 | 16 | Лямбда-функции | — |
 | 17 | Обработка ошибок. Оператор ? | — |
