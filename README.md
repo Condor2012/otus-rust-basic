@@ -21,7 +21,7 @@
 | 4 | Сложные типы данных. Кортеж, структура, перечисление | [`04-tuples-structs-enums/`](04-tuples-structs-enums/) |
 | 5 | Ветвление и циклы | [`05-branching-and-loops/`](05-branching-and-loops/) |
 | 6 | Практика: типы данных, переменные, ветвление, циклы | [`06-practice-data-types-control-flow/`](06-practice-data-types-control-flow/) |
-| 7 | Управление ресурсами. Клонирование. Copy. Владение | — |
+| 7 | Управление ресурсами. Клонирование. Copy. Владение | [`07-resource-management-ownership/`](07-resource-management-ownership/) |
 | 8 | Владение. Ссылки и заимствование | — |
 | 9 | Практика: владение и заимствование | — |
 | 10 | Коллекции. Слайсы, массивы, строки | [`10-collections-slices-strings/`](10-collections-slices-strings/) |
