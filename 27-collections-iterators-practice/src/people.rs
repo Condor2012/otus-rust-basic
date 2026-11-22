@@ -15,7 +15,7 @@ impl Person {
 
 pub fn sort_by_age_descending(persons: Vec<Person>) -> Vec<Person> {
     let mut sorted_persons = persons;
-    sorted_persons.sort_by(|a, b| b.age.cmp(&a.age));
+    sorted_persons.sort_by_key(|person| std::cmp::Reverse(person.age));
     sorted_persons
 }
 
@@ -32,7 +32,10 @@ mod tests {
         ];
 
         let sorted = sort_by_age_descending(persons);
-        let names = sorted.iter().map(|person| person.name.as_str()).collect::<Vec<_>>();
+        let names = sorted
+            .iter()
+            .map(|person| person.name.as_str())
+            .collect::<Vec<_>>();
 
         assert_eq!(names, vec!["Charlie", "Alice", "Bob"]);
     }

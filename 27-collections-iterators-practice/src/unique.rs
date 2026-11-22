@@ -18,13 +18,9 @@ pub fn first_unique_element(numbers: Vec<i32>) -> Option<i32> {
         *frequency_map.entry(number).or_insert(0) += 1;
     }
 
-    for number in numbers {
-        if frequency_map[&number] == 1 {
-            return Some(number);
-        }
-    }
-
-    None
+    numbers
+        .into_iter()
+        .find(|&number| frequency_map[&number] == 1)
 }
 
 #[cfg(test)]
@@ -38,12 +34,18 @@ mod tests {
 
     #[test]
     fn removes_duplicates_without_assuming_hashset_order() {
-        assert_eq!(sorted(unique_elements(vec![1, 2, 3, 2, 1, 4, 5])), vec![1, 2, 3, 4, 5]);
+        assert_eq!(
+            sorted(unique_elements(vec![1, 2, 3, 2, 1, 4, 5])),
+            vec![1, 2, 3, 4, 5]
+        );
     }
 
     #[test]
     fn merges_vectors_and_removes_duplicates() {
-        assert_eq!(sorted(merge_unique(vec![1, 2, 3], vec![3, 4, 5])), vec![1, 2, 3, 4, 5]);
+        assert_eq!(
+            sorted(merge_unique(vec![1, 2, 3], vec![3, 4, 5])),
+            vec![1, 2, 3, 4, 5]
+        );
     }
 
     #[test]

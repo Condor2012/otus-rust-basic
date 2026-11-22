@@ -39,7 +39,10 @@ mod tests {
     fn filters_and_uppercases_strings() {
         let strings = vec!["rust", "is", "awesome", "and", "fast"];
 
-        assert_eq!(filter_and_uppercase(strings), vec!["RUST", "AWESOME", "FAST"]);
+        assert_eq!(
+            filter_and_uppercase(strings),
+            vec!["RUST", "AWESOME", "FAST"]
+        );
     }
 
     #[test]
@@ -56,7 +59,10 @@ mod tests {
 
     #[test]
     fn retains_only_values_not_equal_to_target() {
-        assert_eq!(remove_all_occurrences(vec![1, 2, 3, 2, 4, 2, 5], 2), vec![1, 3, 4, 5]);
+        assert_eq!(
+            remove_all_occurrences(vec![1, 2, 3, 2, 4, 2, 5], 2),
+            vec![1, 3, 4, 5]
+        );
         assert_eq!(remove_all_occurrences(vec![2, 2], 2), Vec::<i32>::new());
     }
 
