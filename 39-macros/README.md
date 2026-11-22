@@ -35,7 +35,7 @@
 ## Запуск
 
 ```bash
-cargo run --example demo
+cargo run
 cargo test
 ```
 
