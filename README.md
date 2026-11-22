@@ -62,7 +62,7 @@
 | 35 | Interior mutability. Cell, RefCell | [`35-interior-mutability/`](35-interior-mutability/) |
 | 36 | Q&A сессия | — |
 | 37 | Сборка. Модули | [`37-build-modules/`](37-build-modules/) |
-| 38 | Продвинутые элементы синтаксиса | — |
+| 38 | Продвинутые элементы синтаксиса | [`38-advanced-syntax/`](38-advanced-syntax/) |
 | 39 | Макросы: декларативные и процедурные | — |
 | 40 | Асинхронность. async/await | — |
 | 41 | Пример: разбор приложения на Rust | — |
