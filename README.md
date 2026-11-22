@@ -55,7 +55,7 @@
 | Занятие | Тема | Код |
 |---|---|---|
 | 30 | Работа с кучей. Box, Arc, Rc. RAII | [`30-heap-box-rc-arc-raii/`](30-heap-box-rc-arc-raii/) |
-| 31 | Потоки. Send + Sync | — |
+| 31 | Потоки. Send + Sync | [`31-threads-send-sync/`](31-threads-send-sync/) |
 | 32 | Лямбды и потоки. move и Arc | [`32-closures-threads-arc/`](32-closures-threads-arc/) |
 | 33 | Mutex, Atomic | [`33-mutex-atomic/`](33-mutex-atomic/) |
 | 34 | Практика: потоки, куча, mutex, atomic | — |
