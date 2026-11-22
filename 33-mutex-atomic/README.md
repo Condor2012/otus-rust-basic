@@ -1,16 +1,27 @@
-# Занятие 33. Mutex, Atomic
+# Занятие 33. Mutex и Atomic
 
-Песочница для синхронизации потоков: один crate, шесть бинарников.
+Шесть независимых примеров демонстрируют синхронизацию потоков, атомарные операции и типичные проблемы блокировок.
 
 ## Примеры
 
+- `mutex` — `Mutex`, отличие `try_lock` от `lock` и разделённый счётчик;
+- `atomic` — `AtomicUsize`, операции `store`, `try_update`, `load` и `Ordering`;
+- `rwlock` — конкурентные читатели и эксклюзивный писатель через `RwLock`;
+- `parking_lot` — сравнение размера и выравнивания `std::Mutex` и `parking_lot::Mutex`;
+- `poisoned` — отравление мьютекса паникой, `is_poisoned` и `clear_poison`;
+- `deadlock` — взаимная блокировка при захвате двух мьютексов в разном порядке.
+
+## Запуск
+
 ```bash
-cargo run --bin mutex       # Mutex: try_lock vs lock, разделённый счётчик
-cargo run --bin atomic      # AtomicUsize: store / fetch_update / load, Ordering
-cargo run --bin rwlock      # RwLock: конкурентные читатели vs писатели
-cargo run --bin parking_lot # размер и выравнивание std::Mutex vs parking_lot::Mutex
-cargo run --bin poisoned    # отравление мьютекса паникой, is_poisoned, clear_poison
-cargo run --bin deadlock    # классический дедлок: два мьютекса в разном порядке
+cargo run --example mutex
+cargo run --example atomic
+cargo run --example rwlock
+cargo run --example parking_lot
+cargo run --example poisoned
+cargo run --example deadlock
 ```
 
-> ⚠️ `deadlock` намеренно зависает — запускайте, чтобы увидеть взаимную блокировку вживую, и прерывайте по Ctrl+C.
+> **Внимание:** `deadlock` намеренно зависает. Запускайте его только для демонстрации взаимной блокировки и прерывайте через Ctrl+C.
+
+Все остальные примеры завершаются самостоятельно. Для сравнения реализаций мьютексов используется crate `parking_lot`.
