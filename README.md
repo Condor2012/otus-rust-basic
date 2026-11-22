@@ -64,8 +64,8 @@
 | 37 | Сборка. Модули | [`37-build-modules/`](37-build-modules/) |
 | 38 | Продвинутые элементы синтаксиса | [`38-advanced-syntax/`](38-advanced-syntax/) |
 | 39 | Макросы: декларативные и процедурные | [`39-macros/`](39-macros/) |
-| 40 | Асинхронность. async/await | — |
-| 41 | Пример: разбор приложения на Rust | — |
+| 40 | Асинхронность. async/await | [`40-async-await-event-loop/`](40-async-await-event-loop/) |
+| 41 | Пример: разбор приложения на Rust | [`41-application-review-thread-pool/`](41-application-review-thread-pool/) |
 | 42 | Q&A сессия | — |
 
 ### Модуль 5. Проектная работа
