@@ -13,6 +13,7 @@
 ```bash
 cargo run --example cell
 cargo run --example refcell
+cargo test
 ```
 
 - `cell` — демонстрация `Cell`: `get/set/replace/take`
