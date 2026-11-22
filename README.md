@@ -44,7 +44,7 @@
 | 22 | Наследование трейтов. Ассоциированные трейты | [`22-supertraits-associated-items-const-generics/`](22-supertraits-associated-items-const-generics/) |
 | 23 | Динамический полиморфизм. dyn Trait, dyn Any | [`23-dynamic-polymorphism/`](23-dynamic-polymorphism/) |
 | 24 | Практика: обобщённое программирование | [`24-generics-lifetimes-practice/`](24-generics-lifetimes-practice/) |
-| 25 | Коллекции. Big O. Хэш-мап и вектор | — |
+| 25 | Коллекции. Big O. Хэш-мап и вектор | [`25-collections-big-o-vec-hashmap/`](25-collections-big-o-vec-hashmap/) |
 | 26 | Коллекции. Итераторы | — |
 | 27 | Практика: коллекции и итераторы | — |
 | 28 | Функции. Типы функций. Лямбда-функции | — |
