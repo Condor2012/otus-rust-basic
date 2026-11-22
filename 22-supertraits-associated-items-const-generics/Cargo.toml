@@ -1,0 +1,6 @@
+[package]
+name = "lesson-22-supertraits-associated-items-const-generics"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
