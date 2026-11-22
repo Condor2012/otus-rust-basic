@@ -58,7 +58,7 @@
 | 31 | Потоки. Send + Sync | [`31-threads-send-sync/`](31-threads-send-sync/) |
 | 32 | Лямбды и потоки. move и Arc | [`32-closures-threads-arc/`](32-closures-threads-arc/) |
 | 33 | Mutex, Atomic | [`33-mutex-atomic/`](33-mutex-atomic/) |
-| 34 | Практика: потоки, куча, mutex, atomic | — |
+| 34 | Практика: потоки, куча, mutex, atomic | [`34-threads-mutex-atomic-practice/`](34-threads-mutex-atomic-practice/) |
 | 35 | Interior mutability. Cell, RefCell | [`35-interior-mutability/`](35-interior-mutability/) |
 | 36 | Q&A сессия | — |
 | 37 | Сборка. Модули | — |
