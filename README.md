@@ -23,7 +23,7 @@
 | 6 | Практика: типы данных, переменные, ветвление, циклы | [`06-practice-data-types-control-flow/`](06-practice-data-types-control-flow/) |
 | 7 | Управление ресурсами. Клонирование. Copy. Владение | [`07-resource-management-ownership/`](07-resource-management-ownership/) |
 | 8 | Владение. Ссылки и заимствование | [`08-ownership-references-borrowing/`](08-ownership-references-borrowing/) |
-| 9 | Практика: владение и заимствование | — |
+| 9 | Практика: владение и заимствование | [`09-ownership-borrowing-practice/`](09-ownership-borrowing-practice/) |
 | 10 | Коллекции. Слайсы, массивы, строки | [`10-collections-slices-strings/`](10-collections-slices-strings/) |
 | 11 | Q&A сессия | — |
 | 12 | Структуры и методы. Инкапсуляция | [`12-structs-methods-encapsulation/`](12-structs-methods-encapsulation/) |
