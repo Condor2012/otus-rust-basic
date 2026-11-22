@@ -47,7 +47,7 @@
 | 25 | Коллекции. Big O. Хэш-мап и вектор | [`25-collections-big-o-vec-hashmap/`](25-collections-big-o-vec-hashmap/) |
 | 26 | Коллекции. Итераторы | [`26-collections-iterators/`](26-collections-iterators/) |
 | 27 | Практика: коллекции и итераторы | [`27-collections-iterators-practice/`](27-collections-iterators-practice/) |
-| 28 | Функции. Типы функций. Лямбда-функции | — |
+| 28 | Функции. Типы функций. Лямбда-функции | [`28-function-types-closures/`](28-function-types-closures/) |
 | 29 | Q&A сессия | — |
 
 ### Модуль 4. Многопоточность и дополнительные темы
@@ -61,7 +61,7 @@
 | 34 | Практика: потоки, куча, mutex, atomic | [`34-threads-mutex-atomic-practice/`](34-threads-mutex-atomic-practice/) |
 | 35 | Interior mutability. Cell, RefCell | [`35-interior-mutability/`](35-interior-mutability/) |
 | 36 | Q&A сессия | — |
-| 37 | Сборка. Модули | — |
+| 37 | Сборка. Модули | [`37-build-modules/`](37-build-modules/) |
 | 38 | Продвинутые элементы синтаксиса | — |
 | 39 | Макросы: декларативные и процедурные | — |
 | 40 | Асинхронность. async/await | — |
