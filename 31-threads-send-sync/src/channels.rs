@@ -31,9 +31,10 @@ pub fn sync_channel(values: Vec<i32>) -> Vec<i32> {
 
 pub fn multiple_producers() -> Vec<i32> {
     let (sender, receiver) = mpsc::channel();
+    let first_sender = sender.clone();
     let second_sender = sender.clone();
 
-    let first = thread::spawn(move || sender.send(1).unwrap());
+    let first = thread::spawn(move || first_sender.send(1).unwrap());
     let second = thread::spawn(move || second_sender.send(2).unwrap());
     drop(sender);
 

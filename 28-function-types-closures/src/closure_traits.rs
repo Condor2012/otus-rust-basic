@@ -45,7 +45,10 @@ mod tests {
 
     #[test]
     fn demonstrates_all_three_closure_traits() {
-        assert_eq!(examples(), (18, 6, String::from("Владение передано лямбде")));
+        assert_eq!(
+            examples(),
+            (18, 6, String::from("Владение передано лямбде"))
+        );
     }
 
     #[test]

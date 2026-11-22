@@ -49,6 +49,10 @@ impl List {
             Self::Nil => 0,
         }
     }
+
+    pub fn is_empty(&self) -> bool {
+        matches!(self, Self::Nil)
+    }
 }
 
 #[cfg(test)]
