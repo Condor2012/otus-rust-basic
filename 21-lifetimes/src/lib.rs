@@ -51,16 +51,16 @@ mod tests {
     }
 
     #[test]
-    fn longest_can_be_used_in_inner_scope() {
+    fn longest_result_is_limited_to_input_lifetimes() {
         let first = String::from("long string");
-        let result;
         {
             let second = String::from("tiny");
-            result = longest(&first, &second);
+            let result = longest(&first, &second);
             assert_eq!(result, "long string");
         }
-        // result можно использовать здесь: выбранная ссылка указывает на first.
-        assert_eq!(result, "long string");
+        // Результат нельзя использовать здесь: сигнатура longest допускает ссылку на second,
+        // даже если при конкретном запуске была выбрана ссылка на first.
+        assert_eq!(first, "long string");
     }
 
     #[test]
