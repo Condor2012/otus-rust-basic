@@ -23,7 +23,7 @@
 ## Запуск
 
 ```bash
-cargo run --example demo
+cargo run
 ```
 
 Запуск тестов:
