@@ -35,8 +35,8 @@
 ## Запуск
 
 ```bash
-cargo run
-cargo test --workspace
+cargo run --example demo
+cargo test
 ```
 
 Основной crate не имеет внешних сетевых зависимостей. Proc-macro crate использует `syn 2` и `quote 1`, как показано в материалах занятия.

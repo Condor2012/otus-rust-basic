@@ -1,5 +1,6 @@
 use lesson39_proc_macros::{Count, identity, keep};
 
+#[allow(dead_code)]
 #[derive(Count)]
 enum ThreeVariants {
     First,
@@ -7,6 +8,7 @@ enum ThreeVariants {
     Third { value: String },
 }
 
+#[allow(dead_code)]
 #[derive(Count)]
 enum Empty {}
 

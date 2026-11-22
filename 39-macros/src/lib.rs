@@ -20,6 +20,7 @@ macro_rules! add {
 #[macro_export]
 macro_rules! make_vec {
     ($($element:expr),* $(,)?) => {{
+        #[allow(unused_mut)]
         let mut values = Vec::new();
         $(values.push($element);)*
         values
