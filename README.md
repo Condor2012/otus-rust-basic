@@ -41,7 +41,7 @@
 | 19 | Обобщённое программирование. Статический полиморфизм | [`19-generics-static-polymorphism/`](19-generics-static-polymorphism/) |
 | 20 | Q&A сессия | — |
 | 21 | Времена жизни | [`21-lifetimes/`](21-lifetimes/) |
-| 22 | Наследование трейтов. Ассоциированные трейты | — |
+| 22 | Наследование трейтов. Ассоциированные трейты | [`22-supertraits-associated-items-const-generics/`](22-supertraits-associated-items-const-generics/) |
 | 23 | Динамический полиморфизм. dyn Trait, dyn Any | — |
 | 24 | Практика: обобщённое программирование | — |
 | 25 | Коллекции. Big O. Хэш-мап и вектор | — |
